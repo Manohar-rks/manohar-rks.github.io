@@ -59,7 +59,7 @@
     </header>
     <section class="home">
         <div class="home-img">
-            <img src="img.png" alt="">
+            <img src="mannu.jpeg" alt="">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>Manohar.R.K.S</span></h1>
@@ -161,20 +161,69 @@
     </div>
   </div>
 </section>
-<section id="projects"> <h2 style="font-size:35px; color:white; text-align:center;">Projects</h2>
-       <div style="max-width: 900px; margin: auto; display: flex; gap: 20px;"> 
-        <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%;"> 
-          <h2 style="color: #FF9800;">Personal Portfolio Website</h2>
-           <p>My portfolio website showcases my skills, projects, and learning journey in technology. It highlights mini projects 
-            I’ve built in web development, Python, and C/C++ to demonstrate problem-solving and creativity.</p>
-        </div> 
-         <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 40%;"> 
-          <h2 style="color: #FF9800;">Password Generator</h2>
-           <p>I created a Python-based password generator that builds strong and secure passwords using random characters. 
-            It allows customization with letters, numbers, and special symbols for better security.</p> 
-        </div> 
-      </div> 
+<section id="projects">
+  <h2 style="font-size:35px; color:white; text-align:center;">Projects</h2>
+  <!-- Row 1 -->
+  <div style="max-width: 900px; margin: auto; display: flex; gap: 20px; flex-wrap: nowrap;">
+    <!-- Portfolio Website (60%) -->
+    <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%;">
+      <h2 style="color: #FF9800;">Personal Portfolio Website</h2>
+      <p>My portfolio website showcases my skills, projects, and learning journey in technology. 
+         It highlights mini projects I’ve built in web development, Python, and C/C++ to demonstrate 
+         problem-solving and creativity.</p>
+    </div> 
+    <!-- Password Generator (40%) -->
+    <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 40%;">
+      <h2 style="color: #FF9800;">Password Generator</h2>
+      <p>I created a Python-based password generator that builds strong and secure passwords using random characters. 
+         It allows customization with letters, numbers, and special symbols for better security.</p>
+    </div> 
+  </div>
+  <!-- Row 2 -->
+  <div style="max-width: 900px; margin: 24px auto 0; display: flex; gap: 20px; flex-wrap: nowrap;">
+    <!-- Calculator (40%) -->
+    <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 40%;">
+      <h2 style="color:#FF9800;">Calculator</h2>
+      <p>I developed a calculator application in Python with GUI support.
+It provides basic arithmetic operations through a simple and interactive interface.
+The project helped me strengthen my Python programming and GUI development skills.</p>
+    </div>
+    <!-- Wi-Fi Hacks (60%) -->
+    <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%;">
+      <h2 style="color:#FF9800;">Wi-Fi Hacks</h2>
+      <p>This project demonstrates Wi-Fi security testing using Kali Linux tools. 
+         I captured and analyzed my own network traffic to simulate how attackers attempt to crack Wi-Fi passwords. 
+         The work highlights the importance of strong encryption and secure configurations in protecting wireless networks.</p>
+    </div>
+  </div>
+  <!--Row 3-->
+  <div style="max-width:900px; margin: 24px auto 0; display: flex; gap:20px; flex-wrap: nowrap;">
+  <!--fake access point-->
+  <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%">
+  <h2  style="color:#FF9800;">Fake access point</h2>  
+  <p>I created a demo of an Evil Twin Attack by setting up a fake Wi-Fi hotspot in a controlled lab environment. 
+    The project shows how attackers can trick users into connecting to malicious networks.
+     I also explained the possible defenses to raise awareness about securing wireless connections.</p>                        
+  </div>                        
+  </div>
+                            
 </section>
+<section id="contact" >
+  <h2 style="font-size:35px; color:white;">Contact</h2>
+  <p style="font-size: 22px; color:#27d308ab;">You can reach me at:</p>
+  <p style="font-size:18px; color:white; font-weight: bold;">
+    Email: <a href="mailto:manohar.r.k.s.139@gmail.com" style="color:#00BFFF; text-decoration: none;">manohar.r.k.s.139@gmail.com</a>
+  </p>
+  <p style="font-size: 18px; color:white; font-weight: bold;">Contact No.: +91 93055 7599</p>
+  <p style="font-size: 20px; color: rgba(167, 163, 163, 0.637)">You can access my resume by clicking the link below:</p>
+  <a href="Manohar_Resume_Final.pdf" style="color:#0b95c4c9; font-size: 20px;">Manohar_Resume_Final</a>
+</section>
+
  <script>
   const navLinks = document.querySelectorAll("nav a");
   navLinks.forEach(link => {
@@ -184,5 +233,8 @@
     });
   });
 </script>
+<footer>
+  <p style="text-align: center">2025. all rights reserved</p>
+</footer>
 </body>
 </html>
