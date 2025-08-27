@@ -17,9 +17,9 @@
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
     </nav>
-        <a href="#" class="logo">Manohar.R.K.S</a>
-        <style>
-        html {
+    <a href="#" class="logo">Manohar.R.K.S</a>
+    <style>
+      html {
       scroll-behavior: smooth;
     }
     html {
@@ -55,6 +55,11 @@
         scroll-behavior: smooth;
         scroll-padding-top: 80px;
     }
+     @media (max-width: 768px) {
+    .card {
+      flex: 0 0 100% !important; /* Full width on mobile */
+    }
+   }
     </style>
     </header>
     <section class="home">
@@ -82,11 +87,11 @@
     <section id="skills">
     <h2>Skills</h2>
     <div class="skills">
-      <div class="card">
+      <div class="card" style="flex: 0 0 24%">
         <h2>Html & Css</h2>
         <p>I focus on building small-scale projects and websites using HTML and CSS, with an emphasis on frontend web development.</p>
       </div>
-      <div class="card">
+      <div class="card" style="flex: 0 0 38%">
         <h2>Hacking</h2>
         <p>I’ve explored ethical hacking by identifying system vulnerabilities and learning how to secure networks against common cyber threats.</p>
       </div>
@@ -94,80 +99,137 @@
         <h2>Kali linux</h2>
         <p>I have used Kali Linux for ethical hacking and cybersecurity learning, working with tools like Nmap, Wireshark, and Metasploit to analyze and secure networks</p>
       </div>
-      <div class="card">
+      <div class="card" style="flex: 0 0 37%">
         <h2>Programming</h2>
         <p>I’m skilled in C, with strong problem-solving and efficient code writing abilities, and have some experience working with Python and JavaScript for scripting and web-related tasks. This gives me both low-level control and high-level flexibility.
         </p>
       </div>
-      <div class="card">
+      <div class="card" style="flex: 0 0 26%">
         <h2>Networking</h2>
         <p>I have hands-on experience with computer networking, including configuring routers, switches, and basic firewall rules. I’ve also worked with IP addressing, subnetting, and setting up LAN/WAN connections.</p>
       </div>
-      <div class="card">
+      <div class="card" style="flex: 0 0 34%">
         <h2>Penetration Testing</h2>
         <p>I have performed penetration testing on systems and web applications to identify security vulnerabilities. Using tools like Nmap, Burp Suite, and Metasploit, I simulated real-world attacks and provided recommendations to strengthen defenses.</p>
       </div>
-      <div class="card">
+      <div class="card" styel="flex: 0 0 30%">
         <h2>Exploitation FrameWork</h2>
         <p>I have worked with the Metasploit Framework to perform penetration testing and exploit known vulnerabilities in controlled environments. I utilized its modules for reconnaissance, payload delivery, and post-exploitation tasks, gaining hands-on experience in simulating real-world attacks and improving system defenses.</p>
       </div>
-      <div class="card">
+      <div class="card" style="flex: 0 0 38%">
         <h2>Vulnerability Assessment</h2>
         <p>I have conducted vulnerability assessments on systems and web applications to identify potential security risks. Using tools like Nmap, Nessus, and OpenVAS, I scanned for misconfigurations, outdated software, and exploitable weaknesses. I analyzed the results to prioritize threats and provided actionable recommendations to strengthen the security posture.</p>
+      </div>
+      <div class="card" style="flex: 0 0 27%">
+        <h2>DS & A</h2>
+        <p>DSA builds the foundation for problem-solving in programming.
+It focuses on organizing and processing data efficiently using structures like arrays, stacks, queues, and trees.
+Mastery of algorithms helps optimize performance and write scalable code.</p>
+      </div>
+      <div class="card" style="flex: 0 0 28%">
+        <h2>Version Control</h2>
+        <p>Version control helps track changes in code and collaborate with teams.
+Tools like Git and GitHub ensure multiple developers can work on the same project without conflicts.
+It provides a history of edits, making it easy to revert or merge changes.</p>
+        <p></p>
+      </div>
+      <div class="card" style="flex: 0 0 39%">
+        <h2>Color Theory</h2>
+        <p>Color theory is the study of how colors interact, combine, and influence perception.
+It guides designers in creating harmony, balance, and contrast within a layout.
+By understanding warm, cool, complementary, and analogous colors, designers can set the right mood.
+It also plays a vital role in branding, helping communicate emotions and identity effectively.
+A good grasp of color psychology ensures better user engagement and visual appeal.</p>
+      </div>
+      <div class="card" style="flex: 0 0 30%">
+        <h2>Photoshop</h2>
+        <p>Photoshop is a powerful tool for creating and editing visual content.
+It enables designers to work on images, graphics, and layouts with precision.
+From UI design to digital art, it plays a key role in creative projects.</p>
       </div>
     </div>
     </section>
     <section id="education" style="padding: 50px 20px; background-color: black; font-family: Arial, sans-serif; min-height: 100vh;">
-  <h2 style="font-size:35px; text-align: center; color:white;">Education</h2>
-  <div style="max-width: 900px; margin: auto;">
-    <div style="background: #0070B8; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);">
-      <h3 style="margin: 0; color: gold;">Bachelor of Technology in Computer Science</h3>
-      <p style="margin: 5px 0; font-weight: bold;">Ideal Institute of Technology</p>
+  <h2 style="font-size:35px;text-align: center; color:white;">Education & Achievements</h2>
+  
+  <!-- Flex container for Education + Achievements -->
+  <div style="max-width: 1100px; margin: auto; display: flex; gap: 20px; align-items: stretch; flex-wrap: nowrap;">
+
+    <!-- Education Card -->
+    <div style="background: #0070B8; padding: 20px; border-radius: 10px; 
+                box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 67%; color: white;
+                display: flex; flex-direction: column; justify-content: flex-start;">
+      <h3 style="text-align: center; color:gold; font-size: 16px;">Education</h3>          
+      <h3 style="margin: 0; color: gold;">B.Tech</h3>
+      <h3>Bachelor of Technology in Computer Science</h3>
+      <p style="margin: 5px 0; font-weight: bold;">Ideal Institute of Technology, Kakinada</p>
       <p style="margin: 5px 0;">2024 – 2028</p>
-      <p style="margin: 0; color: white;">Key courses: Cybersecurity, Networking, Programming in C/Python, Web Development</p>
+      <p>Key courses: Cybersecurity, Networking, Programming in C/Python, Web Development</p>
+
+      <h3 style="margin: 0; color: gold;">Intermediate</h3>
+      <p style="margin: 5px 0; font-weight: bold;">Sri Chaitanya Junior College, Hyderabad</p>
+      <p style="margin: 5px 0;">2022-2024</p>
+      <p style="margin: 5px 0; font-weight: bold;">Key Course: MPC.</p>
+
+      <h3 style="margin:0; color: gold;">Schooling(10th)</h3>
+      <p style="margin: 5px 0; font-weight: bold;">Prathibha High School, Hyderabad</p>
+      <p>2021-2022.</p>
     </div>
+
+    <!-- Achievements Card -->
+    <div style="background: #0070B8; padding: 20px; border-radius: 10px; 
+                box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 33%; color: white;
+                display: flex; flex-direction: column; justify-content: flex-start;">
+      <h2 style="text-align:center; color: gold;">Achievements</h2>
+      <p><a href="certificate.pdf" target="_blank" style="color:white;"><h3>Python Full Stack</h3></a></p>
+      <p><a href="EH_intro.pdf" target="_blank" style="color: white;"><h3>EH_intro</h3></a></p>
+      <p><a href="EH_certificate.pdf" target="_blank" style="color: white;"><h3>Ethical Hacking Certificate</h3></a></p>
+      <p><a href="PY_essentials _1.pdf" target="_blank" style="color: white;"><h3>Py essentials 1</h3></a></p>
+      <p><a href="ethical-hacker.png" target="_blank" style="color: white;"><h3>EH badge</h3></a></p>
+      <p><a href="python-essentials-1.1 (1).png" target="_blank" style="color: white;"><h3>PY badge</h3></a></p>
+      <p><a href="html.pdf" target="_blank" style="color: white;"><h3>HTML certificate</h3></a></p>
+      <p><a href="eduskills python certi.pdf" target="_blank" style="color: white;"><h3>Eduskills</h3></a></p>
+    </div>
+
+
   </div>
 
-  <h2 style="text-align:center; color: #FFD700">Achievements</h2>
-  <div style="max-width: 900px; margin: auto;">
-    <div style="background: #0070B8; padding: 26px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);">
-      <p>
-        <a href="EH_certificate.pdf" target="_blank" style="color: rgba(255, 217, 0, 0.904);"><h3>Ethical Hacking Certificate</h3></a>
-      </p>
-      <p>
-        <a href="PY_essentials _1.pdf" target="_blank" style="color: rgba(255, 217, 0, 0.904);"><h3>Py essentials 1</h3></a>
-      </p>
-      <p>
-        <a href="ethical-hacker.png" target="_blank" style="color: rgba(255, 217, 0, 0.904)"><h3>EH badge</h3></a>
-      </p>
-      <p>
-        <a href="python-essentials-1.1 (1).png" target="_blank" style="color: rgba(255, 217, 0, 0.904)"><h3>PY badge</h3></a>
-      </p>
-    </div>
-  </div>
-
-  <h2 style="text-align:center; color: #b0b0b0c2;">Description</h2>
-  <div style="max-width: 900px; margin: auto;">
-    <div style="background: #0070B8; padding: 26px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);">
+  <!-- Description below -->
+  <h2 style="text-align:center; color: #b0b0b0c2; margin-top:40px; font-size: 20px;">Description</h2>
+  <div style="max-width: 1100px; margin: auto;">
+    <div style="background: #0070B8; padding: 26px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0px 4px 8px rgba(0,0,0,0.1); color:white;">
       <p style="font-size: 15px;">
-        I am currently pursuing a B.Tech in Computer Science,
-        with a strong focus on cybersecurity, networking, and ethical hacking.
-        My studies involve both theoretical concepts and practical applications.
-        I work extensively with network configuration, vulnerability assessment, and secure coding practices.
-        Alongside my coursework, I actively engage in hands-on labs to strengthen my technical expertise.
-        I regularly explore security tools such as Kali Linux, Nmap, and Burp Suite.
-        I also participate in real-world penetration testing challenges to simulate cyber attack scenarios.
-      </p>
+       I am currently pursuing a Bachelor of Technology in Computer Science,
+with a strong passion for cybersecurity and ethical hacking.
+My academic journey is focused on learning both theoretical and practical aspects of cyber defense.
+I actively explore the concepts of networking, system security, and vulnerability assessment.
+
+I am fascinated by how cyber attacks are carried out in real-world scenarios.
+To strengthen my knowledge, I practice penetration testing in controlled environments.
+Using tools like Kali Linux, Nmap, Burp Suite, and Metasploit, I analyze system weaknesses.
+I also conduct vulnerability assessments to identify risks and recommend solutions.
+
+My goal is to understand the mindset of attackers while building stronger defenses.
+I regularly study different attack vectors, from phishing to Wi-Fi hacks and malware.
+By simulating such attacks, I gain insights into preventive security measures.
+This hands-on approach helps me build practical problem-solving skills in cyber defense.
+
+I aspire to contribute to securing networks, applications, and sensitive data.
+Through continuous learning and practice, I am preparing to become a skilled ethical hacker.
     </div>
   </div>
 </section>
+
+
 <section id="projects">
   <h2 style="font-size:35px; color:white; text-align:center;">Projects</h2>
   <!-- Row 1 -->
-  <div style="max-width: 900px; margin: auto; display: flex; gap: 20px; flex-wrap: nowrap;">
+  <div style="max-width: 1100px; margin: auto; display: flex; gap: 20px; flex-wrap: nowrap;">
     <!-- Portfolio Website (60%) -->
     <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
-                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%;">
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%;"
+                             onmouseover="this.style.background='#005f99'" 
+                             onmouseout="this.style.background='#0070B8'">
       <h2 style="color: #FF9800;">Personal Portfolio Website</h2>
       <p>My portfolio website showcases my skills, projects, and learning journey in technology. 
          It highlights mini projects I’ve built in web development, Python, and C/C++ to demonstrate 
@@ -175,17 +237,21 @@
     </div> 
     <!-- Password Generator (40%) -->
     <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
-                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 40%;">
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 40%;"
+                             onmouseover="this.style.background='#005f99'" 
+                             onmouseout="this.style.background='#0070B8'">
       <h2 style="color: #FF9800;">Password Generator</h2>
       <p>I created a Python-based password generator that builds strong and secure passwords using random characters. 
          It allows customization with letters, numbers, and special symbols for better security.</p>
     </div> 
   </div>
   <!-- Row 2 -->
-  <div style="max-width: 900px; margin: 24px auto 0; display: flex; gap: 20px; flex-wrap: nowrap;">
+  <div style="max-width: 1100px; margin: 24px auto 0; display: flex; gap: 20px; flex-wrap: nowrap;">
     <!-- Calculator (40%) -->
     <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
-                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 40%;">
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 40%;"
+                             onmouseover="this.style.background='#005f99'" 
+                             onmouseout="this.style.background='#0070B8'">
       <h2 style="color:#FF9800;">Calculator</h2>
       <p>I developed a calculator application in Python with GUI support.
 It provides basic arithmetic operations through a simple and interactive interface.
@@ -193,7 +259,9 @@ The project helped me strengthen my Python programming and GUI development skill
     </div>
     <!-- Wi-Fi Hacks (60%) -->
     <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
-                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%;">
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%;"
+                             onmouseover="this.style.background='#005f99'" 
+                             onmouseout="this.style.background='#0070B8'">
       <h2 style="color:#FF9800;">Wi-Fi Hacks</h2>
       <p>This project demonstrates Wi-Fi security testing using Kali Linux tools. 
          I captured and analyzed my own network traffic to simulate how attackers attempt to crack Wi-Fi passwords. 
@@ -201,10 +269,12 @@ The project helped me strengthen my Python programming and GUI development skill
     </div>
   </div>
   <!--Row 3-->
-  <div style="max-width:900px; margin: 24px auto 0; display: flex; gap:20px; flex-wrap: nowrap;">
+  <div style="max-width:1100px; margin: 24px auto 0; display: flex; gap:20px; flex-wrap: nowrap;">
   <!--fake access point-->
   <div class="card" style="background: #0070B8; padding: 26px; border-radius: 10px;
-                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%">
+                             box-shadow: 0px 4px 8px rgba(0,0,0,0.1); flex: 0 0 60%"
+                             onmouseover="this.style.background='#005f99'" 
+                             onmouseout="this.style.background='#0070B8'">
   <h2  style="color:#FF9800;">Fake access point</h2>  
   <p>I created a demo of an Evil Twin Attack by setting up a fake Wi-Fi hotspot in a controlled lab environment. 
     The project shows how attackers can trick users into connecting to malicious networks.
@@ -223,7 +293,29 @@ The project helped me strengthen my Python programming and GUI development skill
   <p style="font-size: 20px; color: rgba(167, 163, 163, 0.637)">You can access my resume by clicking the link below:</p>
   <a href="Manohar_Resume_Final.pdf" style="color:#0b95c4c9; font-size: 20px;">Manohar_Resume_Final</a>
 </section>
+<script>
+  const sections = document.querySelectorAll("section"); 
+  const navlinks = document.querySelectorAll("nav a");
 
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100; 
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+ </script>
  <script>
   const navLinks = document.querySelectorAll("nav a");
   navLinks.forEach(link => {
