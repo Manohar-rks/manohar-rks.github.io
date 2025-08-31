@@ -283,39 +283,59 @@ The project helped me strengthen my Python programming and GUI development skill
   </div>
                             
 </section>
-<section id="contact" >
-  <h2 style="font-size:35px; color:white;">Contact</h2>
-  <p style="font-size: 22px; color:#27d308ab;">You can reach me at:</p>
-  <p style="font-size:18px; color:white; font-weight: bold;">
-    Email: <a href="mailto:manohar.r.k.s.139@gmail.com" style="color:#00BFFF; text-decoration: none;">manohar.r.k.s.139@gmail.com</a>
-  </p>
-  <p style="font-size: 18px; color:white; font-weight: bold;">Contact No.: +91 93055 7599</p>
-  <p style="font-size: 20px; color: rgba(167, 163, 163, 0.637)">You can access my resume by clicking the link below:</p>
-  <a href="Manohar_Resume_Final.pdf" style="color:#0b95c4c9; font-size: 20px;">Manohar_Resume_Final</a>
-</section>
 <script>
-  const sections = document.querySelectorAll("section"); 
-  const navlinks = document.querySelectorAll("nav a");
+  // Collect sections and nav links
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  const navLinks = Array.from(document.querySelectorAll('nav a'));
 
-  window.addEventListener("scroll", () => {
-    let current = "";
+  // Helper: set active link
+  function setActive(id) {
+    navLinks.forEach(a => a.classList.remove('active'));
+    const match = navLinks.find(a => a.getAttribute('href') === '#' + id);
+    if (match) match.classList.add('active');
+  }
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100; 
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-        current = section.getAttribute("id");
-      }
-    });
+  // Default to home on load
+  setActive('home');
 
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === "#" + current) {
-        link.classList.add("active");
-      }
+  // Click: highlight immediately
+  navLinks.forEach(a => {
+    a.addEventListener('click', () => {
+      const id = a.getAttribute('href').slice(1);
+      if (id) setActive(id);
     });
   });
- </script>
+
+  // Scroll: highlight the section most in view
+  const observer = new IntersectionObserver((entries) => {
+    // choose the entry with the largest visibility
+    const visible = entries
+      .filter(e => e.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (visible && visible.target.id) {
+      setActive(visible.target.id);
+    } else {
+      // when near top and nothing intersecting, keep Home active
+      setActive('home');
+    }
+  }, { threshold: [0.55] }); // ~half the section visible
+
+  sections.forEach(sec => observer.observe(sec));
+  document.addEventListener("DOMContentLoaded", function () {
+  const homeLink = document.querySelector('a[href="#home"]');
+
+  if (homeLink) {
+    homeLink.addEventListener("click", function (event) {
+      event.preventDefault(); // stop default jump
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" // smooth scroll effect
+      });
+    });
+  }
+});
+
+</script>
  <script>
   const navLinks = document.querySelectorAll("nav a");
   navLinks.forEach(link => {
